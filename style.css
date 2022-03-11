@@ -1,0 +1,80 @@
+/* id really prefer if you didn't look at this 
+ill get around to making this make sense one day but 
+vscode live preview didn't want to update my edits
+half the time so it really annoy me */
+
+body {
+    background-color: black;
+    font-family: monospace;
+    color:white;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item {
+    background-color: black;
+    width: 25%;
+    margin: 10px;
+}
+
+.flex-item-h {
+    background-color: black;
+    width: 23%;
+    margin: 10px;
+}
+
+header {
+    color: #ffd9a0;
+    text-align: right;
+    height: 60px;
+    height: 2%;
+}
+
+#content {
+    width: 38%;
+}
+
+.nav {
+    width: 10%;
+}
+
+a {
+    color: #3391ff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0%;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 3%;
+    margin:0%; 
+}
+
+li::before {
+    content: "- ";
+}
+
+
+@media (max-width: 650px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .flex-item-h {
+        width: 100%;
+    }
+
+    .flex-item {
+        width: auto;
+    }
+    
+    #content {
+        width: auto;
+    }
+  }
